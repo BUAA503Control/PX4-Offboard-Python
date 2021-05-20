@@ -3,7 +3,7 @@ It is a case for PX4 Offboard Control using Python.
 
 ## **installation**
 ```
-'cd catkin_ws/src
+cd catkin_ws/src
 git clone https://github.com/yrwang501/offb_py.git
 cd ..
 catkin_make

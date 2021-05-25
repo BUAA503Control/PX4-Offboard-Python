@@ -14,11 +14,11 @@ source devel/setup.bash
 Run MAVROS and Gazebo in two terminals:
 ```
 source ~/catkin_ws_py/devel/setup.bash
-roslaunch mavros px4.launch fcu_url:="udp://:14540@127.0.0.1:14557"'
+roslaunch mavros px4.launch fcu_url:="udp://:14540@127.0.0.1:14557"
 ```
 ```
 cd ~/DLR-uav-gazebo/Firmware
-make px4fmu-v4_default
+make px4_sitl_default gazebo
 ```
 ```
 source ~/catkin_ws_py/devel/setup.bash

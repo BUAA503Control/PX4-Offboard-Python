@@ -20,6 +20,13 @@ roslaunch mavros px4.launch fcu_url:="udp://:14540@127.0.0.1:14557"
 cd ~/DLR-uav-gazebo/Firmware
 make px4_sitl_default gazebo
 ```
+OR
+```
+cd PX4-Autopilot
+source ~/PX4-Autopilot/Tools/setup_gazebo.bash ~/PX4-Autopilot/ ~/PX4-Autopilot/build/px4_sitl_default
+export ROS_PACKAGE_PATH=$ROS_PACKAGE_PATH:~/PX4-Autopilot
+export ROS_PACKAGE_PATH=$ROS_PACKAGE_PATH:~/PX4-Autopilot/Tools/sitl_gazebo
+```
 ```
 source ~/catkin_ws_py/devel/setup.bash
 rosrun offb_py offb.py

@@ -25,7 +25,7 @@ OR
 cd PX4-Autopilot
 source ~/PX4-OFFBOARD/PX4-Autopilot/Tools/setup_gazebo.bash ~/PX4-OFFBOARD/PX4-Autopilot/ ~/PX4-OFFBOARD/PX4-Autopilot/build/px4_sitl_default
 source ~/PX4-OFFBOARD/PX4-Autopilot-0615/Tools/setup_gazebo.bash ~/PX4-OFFBOARD/PX4-Autopilot-0615/ ~/PX4-OFFBOARD/PX4-Autopilot-0615/build/px4_sitl_default
-roslaunch px4 posix_sitl.launch
+roslaunch px4 mavros_posix_sitl.launch
 
 #write in setup_gazebo.bash file
 export ROS_PACKAGE_PATH=$ROS_PACKAGE_PATH:${SRC_DIR}
